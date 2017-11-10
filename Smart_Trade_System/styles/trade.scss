@@ -1,0 +1,352 @@
+.formInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formSubmit {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 0px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.formSubmit:hover {
+    background-color: #000000;
+}
+
+.tradeForm {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 40%;
+    margin: 20px;
+    float:left;
+    max-width: 600px;
+    background: #f4f7f8;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+
+.allTrades {
+  display:inline-block;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.deals{
+  font-family: Lato, Arial;
+  margin-left: 33%;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+
+
+.tradeDropDown {
+    -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 100%;
+}
+
+.CurrentAndRecommendations {
+    float:left;
+}
+
+.sideBlock {
+  width: 55%;
+  float: left;
+}
+
+.spot-tile {
+  position: relative;
+  width: 30%;
+  float:left;
+  height: 165px;
+  color: #c2c5c9;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #111111;
+  border: solid 1px #424545;
+  &:hover {
+    background-color: #001f3f;
+    border: 1px solid;
+    .spot-tile__icon--chart,
+    .spot-tile__icon--tearoff,
+    .spot-tile__delivery-date {
+      display: inline;
+    }
+  }
+  & * {
+    box-sizing: border-box;
+  }
+
+  .spot-tile__execution-label,
+  .spot-tile__delivery-date {
+    display: none;
+  }
+
+  &.spot-tile--stale,
+  &.spot-tile--error {
+  }
+  &.spot-tile--executing {
+    .spot-tile__execution-label {
+      display: inline-block;
+      position: absolute;
+      right: 60px;
+      top: 0;
+      text-transform: uppercase;
+      text-align: right;
+    }
+  }
+  &.spot-tile--executing,
+  &.spot-tile--readonly {
+    .spot-tile__price {
+      cursor: default;
+    }
+  }
+  &:not(.spot-tile--readonly) {
+    .spot-tile__price:hover {
+      color: white;
+
+      .price-button__pip {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.heading {
+  text-align: right;
+  font-size: 12px;
+}
+
+.spot-tile1 {
+  position: relative;
+  width: 25%;
+  float:left;
+  height: 165px;
+  color: #c2c5c9;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #111111;
+  border: solid 1px #424545;
+  &:hover {
+    background-color: #001f3f;
+    border: 1px solid;
+    .spot-tile__icon--chart,
+    .spot-tile__icon--tearoff,
+    .spot-tile__delivery-date {
+      display: inline;
+    }
+  }
+  & * {
+    box-sizing: border-box;
+  }
+
+  .spot-tile__execution-label,
+  .spot-tile__delivery-date {
+    display: none;
+  }
+
+  &.spot-tile--stale,
+  &.spot-tile--error {
+  }
+  &.spot-tile--executing {
+    .spot-tile__execution-label {
+      display: inline-block;
+      position: absolute;
+      right: 60px;
+      top: 0;
+      text-transform: uppercase;
+      text-align: right;
+    }
+  }
+  &.spot-tile--executing,
+  &.spot-tile--readonly {
+    .spot-tile__price {
+      cursor: default;
+    }
+  }
+  &:not(.spot-tile--readonly) {
+    .spot-tile__price:hover {
+      color: white;
+
+      .price-button__pip {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.spot-tile__icon--hidden{
+  display: none;
+}
+
+.spot-tile__container {
+  position: absolute;
+  top: 10px;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+}
+
+.spot-tile__symbol {
+  color: white;
+  font-family: BrandonRegular;
+  font-weight: 700;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spot-tile__price {
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+}
+
+.spot-tile__price--bid {
+  left: -10px;
+  margin-left: 1px;
+}
+
+.spot-tile__price--ask {
+  right: -10px;
+  margin-right: 1px;
+}
+
+.spot-tile__price-movement {
+  position: absolute;
+  left: 35%;
+  text-align: center;
+  font-size: 25px;
+  top: 30%;
+  width: 10%;
+}
+
+.spot-tile__price-movement1 {
+  position: absolute;
+  left: 40%;
+  text-align: center;
+  font-size: 30px;
+  top: 30%;
+  width: 10%;
+}
+
+.spot-tile__notional {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  font-family: BrandonRegular;
+}
+
+.spot-tile__controls {
+  float: right;
+}
+
+
+.spot-tile__icon--chart.glyphicon,
+.spot-tile__icon--tearoff.glyphicon,
+.spot-tile__icon--undock.glyphicon {
+  display: none;
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+.spot-tile__icon--rotate {
+  margin-left: 6px;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+      }
+  }
+}
+
+.spot-tile__icon--hidden {
+  visibility: hidden;
+}
+
+.spot-tile__notification-message {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.spot-tile__delivery {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 14px;
+  font-family: BrandonRegular;
+  text-transform: uppercase;
+}
+
+.heading1 {
+
+    background: #111111;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #c2c5c9;
+    font-size: 13px;
+    font-weight: 80;
+    padding: 15px;
+    width: 109%;
+    margin: -30px -30px 30px -30px;
+
+}
+
+body {
+  text-transform: uppercase;
+}
+
+.graph {
+  font-family: Lato, Arial;
+  margin-top: 10px;
+}
+
+

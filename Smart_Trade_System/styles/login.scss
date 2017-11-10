@@ -1,0 +1,432 @@
+
+.welcome {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-image: url("./images/forexBg5.jpg");
+  background-origin: padding-box;
+  background-position: center;
+  background-size: cover;
+  color: #58585B;
+  font-size: 14px;
+  font-weight: normal;
+  height: 100%;
+  line-height: 21px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.welcomeWrap, .welcomeContainer {
+  height: 100%;
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomeContainer .loginWindow {
+  padding: 40px;
+  text-align: left;
+  background-color: #fafafa;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 40px, rgba(0, 0, 0, 0.2) 0px -4px inset;
+  margin: auto;
+}
+
+.welcomeContainer .logo {
+  text-align: center;
+}
+
+a, a:hover {
+  border: 0;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+  text-decoration-line: none;
+  color: #049fd9;
+}
+
+.no-tabs a {
+  display: inline-block;
+}
+
+a:hover {
+  color: #8fa6b3;
+}
+
+a:link {
+  -webkit-tap-highlight-color: #ed8abd;
+}
+
+.no-hover {
+  float:left;
+}
+
+.logoImg {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/logo1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.welcomeContainer .logo .secondaryLogo {
+  margin-top: 16px;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 38px;
+  letter-spacing: -1px;
+}
+
+sub, sup {
+  font-size: 0.6rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+.welcomeContainer .logo .secondaryLogo sup {
+  font-size: 16px;
+  top: -4px;
+  line-height: 1;
+  vertical-align: super;
+}
+
+.welcomeContainer .logo .versionNumber {
+  font-size: 14px;
+  font-weight: normal;
+  color: #7f7f86;
+  margin-top: 8px;
+}
+
+.formFramework, .form-focused, .form-fieldset {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.formFramework {
+  width: 400px;
+  margin-top: 24px;
+  position: relative;
+  clear: both;
+  list-style-type: none;
+}
+
+form, fieldset, label, input, button, select {
+  margin: 0;
+}
+
+input {
+  color: #58585B;
+  font-size: 14px;
+  position: relative;
+  line-height: 3rem;
+}
+
+select:invalid, select.invalid, input.invalid, input:invalid {
+  border: 1px solid #cd0a0a;
+  background-color: #fef1ec;
+}
+
+input, select[multiple] {
+  padding: 6px 5px 6px 5px;
+  border: 1px solid #e1e1e1;
+  margin-top: 10px;
+}
+
+input:invalid {
+  background-image: inherit;
+  background-position-x: inherit;
+  background-position-y: inherit;
+  background-size: inherit;
+  background-attachment: inherit;
+  background-origin: inherit;
+  background-clip: inherit;
+  background-color: inherit;
+}
+
+.formList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.formItem {
+  margin-bottom: 16px;
+}
+
+label, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  position: relative;
+  line-height: 14px;
+  font-weight: 300;
+  color: #000000;
+  padding: 0 0 8px 0;
+}
+
+label:not(.checkboxLabel):empty {
+  position: absolute;
+  opacity: 0;
+}
+
+.welcomeContainer .loginWindow .loginLabel {
+  text-transform: uppercase;
+  color: #9e9ea2;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -0.3px;
+  line-height: 8px;
+}
+
+.formItem input, .formItem select[multiple] {
+  margin-top: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+input[type="tel"], input[type="url"], input[type="text"], input[type="date"], input[type="email"], input[type="number"], input[type="password"], input[type="text"]:focus, input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, select[multiple]:focus, input + .add-on + .add-on, input:focus + .add-on:focus + .add-on, input[type="checkbox"]:focus + .checkboxLabel::before, input[type="radio"]:focus + .radioLabel::before {
+  transition-duration: 0.15s, 0.15s;
+  transition-timing-function: linear, linear;
+  transition-property: border, box-shadow;
+}
+
+.inputFull {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.welcomeContainer .loginWindow .loginInput {
+  height: 40px;
+  padding-left: 8px;
+}
+
+.welcomeContainer .loginWindow .loginInput:focus {
+  box-shadow: none;
+}
+
+.welcomeContainer .checkbox-remember {
+  margin-top: 10px;
+}
+
+input[type="radio"], input[type="checkbox"], input[type="search"] {
+  box-sizing: content-box;
+}
+
+.inputCheckbox, .inputRadio {
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+}
+
+.checkboxLabel, .radioLabel {
+  font-size: 13px;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.inputRadio:disabled + .checkboxLabel, .inputCheckbox:disabled + .checkboxLabel, .inputRadio:disabled + .radioLabel, .inputCheckbox:disabled + .radioLabel {
+  cursor: default;
+}
+
+.welcomeContainer .loginWindow .checkboxLabel {
+  color: #7f7f86;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.btnWrapper {
+  line-height: 2.5rem;
+  overflow: hidden;
+  padding: 0.7rem;
+}
+
+.welcomeContainer .btnWrapper {
+  overflow: visible;
+  text-align: center;
+  padding: 0;
+  line-height: normal;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+}
+
+.primaryButton, .fm-button, .ui-jqdialog-content .EditButton a, .ui-button {
+  padding: 10px 20px 10px 20px;
+  width: auto;
+  display: inline-block;
+  border: 1px solid #354052;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: #f2f2f2 3px 3px 0px;
+  outline-style: none;
+  cursor: pointer;
+  overflow: visible;
+  margin-right: 16px;
+  color: #ffffff;
+  background-color: #049fd9;
+}
+
+button:disabled {
+  padding: 10px 20px 10px 20px;
+  width: auto;
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline-style: none;
+  cursor: pointer;
+  overflow: visible;
+  color: #b0b0b0;
+  box-shadow: none;
+}
+
+button:disabled:hover {
+  background-color: #ededed;
+  color: #b0b0b0;
+}
+
+button:disabled.hide {
+  display: none;
+}
+
+.btnForm {
+  float: right;
+}
+
+.welcomeContainer .btnWrapper .btnForm {
+  width: 100%;
+  border-style: none;
+  float: none;
+  padding: 12px 20px 12px 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+}
+
+.welcomeContainer .btnWrapper .btnForm, .loginSecondaryAction {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.welcomeContainer .btnWrapper .loginSecondaryAction {
+  margin: 16px 0 16px 0;
+}
+
+.welcomeContainer .btnWrapper .docs {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+select, option {
+  padding: 4px;
+}
+
+select {
+  max-width: 200px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #e1e1e1;
+}
+
+.loginFooter {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  height: 200px;
+  padding-bottom: 40px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.loginFooterContent {
+  width: 100%;
+}
+
+.otherInfo, .companyInfo {
+  display: block;
+}
+
+.loginFooter .loginFooterLink {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.loginWindow .loginInput:focus {
+    box-shadow: none;
+}
+
+input[type=url], input[type=text], input[type=email], input[type=number], input[type=password], input[type=text]:focus, input[type=date]:focus, input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, select[multiple]:focus, input+.add-on+.add-on, input:focus+.add-on:focus+.add-on, input[type=checkbox]:focus+.checkboxLabel::before, input[type=radio]:focus+.radioLabel::before {
+    -webkit-transition: border linear 0.15s, box-shadow linear 0.15s;
+    -moz-transition: border linear 0.15s, box-shadow linear 0.15s;
+    -ms-transition: border linear 0.15s, box-shadow linear 0.15s;
+    -o-transition: border linear 0.15s, box-shadow linear 0.15s;
+    transition: border linear 0.15s, box-shadow linear 0.15s;
+}
+
+input:focus:focus, select[multiple]:focus {
+    outline: 0;
+    box-shadow: 0 0 3px rgba(0,0,0,0.15);
+    border: 1px solid #049FD9;
+}
+
+.primaryButton:hover, .fm-button:hover, .ui-jqdialog-content .EditButton a:hover, .ui-button:hover {
+    border: solid #354052 1px;
+    background-color: #0382b1;
+}
+
+.welcomeContainer .btnWrapper .loginSecondaryAction:hover, .docs:hover {
+    color: #049FD9;
+    text-decoration: underline;
+}
+
+a, a:hover {
+    border: 0;
+    -moz-transition: none 0;
+    -o-transition: none 0;
+    -webkit-transition: none 0;
+    transition: none 0;
+}
+
+a:hover {
+    color: #8fa6b3;
+}
+
+.errorMsg {
+    color: #cf2030;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.visible {
+  display: block;
+}
+
+.errorMsg .glyphicons-exclamation-sign {
+  font-size: 16px;
+  margin-right: 8px;
+}
