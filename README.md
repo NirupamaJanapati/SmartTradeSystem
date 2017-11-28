@@ -1,3 +1,5 @@
 # SmartTradeSystem UI
 
-This is the UI code for Smart Trade web application, which is a recommendation system that suggests trends for currency trading using historical & real-time data from markets. It enables currency trading and Data visualization of exchange rates, profits and loss in dashboards.
+* System that shows trends of currency trading using historical & real-time data from markets. 
+* Allows users to trade currencies and view their open and closed deals. 
+* Data visualization of live exchange rates for currencies, profits and loss in dashboards.
